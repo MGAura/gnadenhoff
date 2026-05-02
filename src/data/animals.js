@@ -31,7 +31,7 @@ export const animals = [
     location: "Gnadenhof Sonnenweide, vor Ort",
     contribution: "ab 45 EUR / Monat",
     image:
-      "https://images.unsplash.com/photo-1533318087102-b2787fb8f5fb?auto=format&fit=crop&w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/A_Donkey_in_a_field_-_geograph.org.uk_-_2139380.jpg/960px-A_Donkey_in_a_field_-_geograph.org.uk_-_2139380.jpg",
   },
   {
     id: "nala",
@@ -44,7 +44,7 @@ export const animals = [
     location: "Gnadenhof Sonnenweide, vor Ort",
     contribution: "ab 40 EUR / Monat",
     image:
-      "https://images.unsplash.com/photo-1527415545351-40994c3b8e06?auto=format&fit=crop&w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Llama_on_Grass_at_Machu_Picchu.jpg/960px-Llama_on_Grass_at_Machu_Picchu.jpg",
   },
   {
     id: "lotte",
