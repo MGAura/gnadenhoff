@@ -1,4 +1,4 @@
-# Gnadenhof Sonnenweide - Pflegebeteiligungs-Portal V1
+# Natur Live Ranch - Pflegebeteiligungs-Portal V1
 
 Mobile-first React-Prototyp für einen einzelnen Gnadenhof als Pilotprojekt. Interessierte können Tiere entdecken, nach Tierart und Beteiligungsform filtern und eine unverbindliche Anfrage senden. Das Hofteam kann eingehende Anfragen in einem einfachen Admin-Dashboard prüfen und den Status ändern.
 

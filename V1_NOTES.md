@@ -2,7 +2,7 @@
 
 ## Aktueller Umsetzungsstand
 
-Das Projekt ist ein lokal startbarer React/Vite-Prototyp für den einzelnen Gnadenhof Sonnenweide. Es gibt eine öffentliche Discover-Ansicht, ein Anfrageformular und ein Admin-Dashboard. Daten kommen aus Mock-Dateien und werden zur Laufzeit im lokalen React-State verwaltet.
+Das Projekt ist ein lokal startbarer React/Vite-Prototyp für die Natur Live Ranch. Es gibt eine öffentliche Discover-Ansicht, ein Anfrageformular und ein Admin-Dashboard. Daten kommen aus Mock-Dateien und werden zur Laufzeit im lokalen React-State verwaltet.
 
 ## Was funktioniert
 

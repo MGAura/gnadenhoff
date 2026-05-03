@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
-import { LayoutDashboard, Leaf, MapPin } from "lucide-react"
+import { HeartHandshake, LayoutDashboard, Leaf, MapPin, Sprout } from "lucide-react"
 import { AdminDashboard } from "./components/AdminDashboard"
 import { AnimalCard } from "./components/AnimalCard"
 import { EmptyState } from "./components/EmptyState"
@@ -65,13 +65,20 @@ function App() {
     changeView(views.admin)
   }
 
+  const animalFocusItems = [
+    "Pferde & Ponys",
+    "Esel & Maultiere",
+    "Lamas & Alpakas",
+    "Schafe, Ziegen & Co.",
+  ]
+
   return (
     <div className="app-shell">
       <header className="topbar">
         <button className="brand" onClick={() => changeView(views.discover)} aria-label="Zur Startansicht">
-          <span className="brand-mark">S</span>
+          <img className="brand-logo" src="/natur-live-ranch-logo.png" alt="Natur Live Ranch" />
           <span>
-            <strong>Sonnenweide</strong>
+            <strong>Natur Live Ranch</strong>
             <small>Gnadenhof Pflegebeteiligung</small>
           </span>
         </button>
@@ -92,27 +99,43 @@ function App() {
           <>
             <section className="hero">
               <div className="hero-copy">
-                <p className="eyebrow">Pilotprojekt für einen Hof in der Region</p>
-                <h1>Pflegebeteiligungen am Gnadenhof Sonnenweide</h1>
+                <p className="eyebrow">
+                  Bist Du auf der Suche nach Tierisch guten Erfahrungen dann bist Du hier richtig.
+                </p>
+                <h1>
+                  Natur Live Ranch
+                  <span>Pflegebeteiligungen mit Herz und Verantwortung</span>
+                </h1>
                 <p>
-                  Entdecke Tiere, die regelmäßige Zeit, Pflege oder Versorgungspatenschaften
-                  brauchen. Schnell verständlich, ohne Login und bewusst schlank für den ersten
-                  Pilottest.
+                  Entdecke Tiere, die regelmäßige Zeit, Pflege und verlässliche Unterstützung
+                  brauchen. Lerne den Gnadenhof kennen und finde heraus, welche Beteiligung zu Dir
+                  passt.
                 </p>
                 <div className="hero-facts" aria-label="Kurzinfos zum Pilotprojekt">
                   <span>
                     <Leaf size={18} aria-hidden="true" />
-                    4 Tiere im V1
+                    Alle Arten von Nutztieren
                   </span>
                   <span>
                     <MapPin size={18} aria-hidden="true" />
-                    Vor Ort am Hof
+                    Gnadenhof Schwabenheim
                   </span>
                 </div>
               </div>
               <div className="hero-image">
                 <img src={animals[0].image} alt="Pferd auf einer ruhigen Weide" />
               </div>
+            </section>
+
+            <section className="animal-focus" aria-label="Tierarten auf der Natur Live Ranch">
+              {animalFocusItems.map((item) => (
+                <article key={item}>
+                  <span aria-hidden="true">
+                    {item.includes("Schafe") ? <Sprout size={20} /> : <HeartHandshake size={20} />}
+                  </span>
+                  <strong>{item}</strong>
+                </article>
+              ))}
             </section>
 
             <section className="discover-section" id="animals">
